@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>後台管理</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">後台管理</div>
+                <ul class="list">
+                    <li><a href="index.html" class="active">首頁</a></li>
+                    <li><a href="order.html">訂單</a></li>
+                    <li><a href="product.html">產品</a></li>
+                </ul>
+                <div class="signIn">管理員登入</div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="overview_title">
+                <h2>OVERVIEW</h2>
+                <div class="time-container">
+                    <div class="time">
+                        <span>2018/11/01</span>
+                        <i class="fas fa-caret-right"></i>
+                        <span>2018/11/08</span>
+                    </div>
+                    <div class="weekly"><span>Weekly</span></div>
+                    <i class="fas fa-caret-down"></i>
+                    <ul class="select_time hide">
+                        <li>Daily</li>
+                        <li>Weekly</li>
+                        <li>Monthly</li>
+                        <li>Yearly</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="overview_container">
+                <div class="overview_box">
+                    <i class="fas fa-money-check-alt"></i>
+                    <span>Total Revenue</span>
+                    <p id="revenue"></p>
+                </div>
+                <div class="overview_box">
+                    <i class="fas fa-dolly"></i>
+                    <span>Total Cost</span>
+                    <p id="cost"></p>
+                </div>
+                <div class="overview_box">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <span>Net Income</span>
+                    <p id="income"></p>
+                </div>
+            </div>
+
+            <div class="chart">
+                <h2>Activity</h2>
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div class="others">
+                <div class="others_box transition">
+                    <h2>Transaction Website</h2>
+                    <div class="social-medias">
+                        <div class="website">
+                            <i class="fab fa-facebook-square"></i>
+                            <span>Facebook.com</span>
+                        </div>
+                        <div class="trans_number">
+                            <p>NT$ 21563</p>
+                            <i class="fas fa-arrow-up"></i>
+                            <span class="rise">20%</span>
+                        </div>
+                    </div>
+                    <div class="social-medias">
+                        <div class="website">
+                            <i class="fab fa-google"></i>
+                            <span>Google.com</span>
+                        </div>
+                        <div class="trans_number">
+                            <p>NT$ 45836</p>
+                            <i class="fas fa-arrow-up"></i>
+                            <span class="rise">20%</span>
+                        </div>
+                    </div>
+                    <div class="social-medias">
+                        <div class="website">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram.com</span>
+                        </div>
+                        <div class="trans_number">
+                            <p>NT$ 76521</p>
+                            <i class="fas fa-arrow-down"></i>
+                            <span class="down">15%</span>
+                        </div>
+                    </div>
+                    <div class="social-medias">
+                        <div class="website">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter.com</span>
+                        </div>
+                        <div class="trans_number">
+                            <p>NT$ 54968</p>
+                            <i class="fas fa-arrow-down"></i>
+                            <span class="down">17%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="others_box recent_deal">
+                    <h2>Latest Orders</h2>
+                    <div class="order">
+                        <div class="orderthumb"><img src="img/鳳牙.jpg" alt="" /></div>
+                        <div class="orderinfo">
+                            <div class="goods">
+                                鳳牙
+                            </div>
+                            <div class="date"><i class="fas fa-clock"></i><span>2018/11/13 13:42</span></div>
+                            <div class="buyer"><i class="fas fa-male"></i><span>Evans Wu</span></div>
+                        </div>
+                        <div class="orderprice"><span>Total</span>
+                            <p>NT$3200</p>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <div class="orderthumb"><img src="img/鳳牙.jpg" alt="" /></div>
+                        <div class="orderinfo">
+                            <div class="goods">
+                                鳳牙
+                            </div>
+                            <div class="date"><i class="fas fa-clock"></i><span>2018/11/13 13:42</span></div>
+                            <div class="buyer"><i class="fas fa-male"></i><span>Evans Wu</span></div>
+                        </div>
+                        <div class="orderprice"><span>Total</span>
+                            <p>NT$3200</p>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <div class="orderthumb"><img src="img/鳳牙.jpg" alt="" /></div>
+                        <div class="orderinfo">
+                            <div class="goods">
+                                鳳牙
+                            </div>
+                            <div class="date"><i class="fas fa-clock"></i><span>2018/11/13 13:42</span></div>
+                            <div class="buyer"><i class="fas fa-male"></i><span>Evans Wu</span></div>
+                        </div>
+                        <div class="orderprice"><span>Total</span>
+                            <p>NT$3200</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.9.3/countUp.min.js'></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
