@@ -1,0 +1,158 @@
+$colorGreen: #7ED321
+$colorRed: #D0021B
+$colorBlue: #4A90E2
+
+
+.content
+    width: 1024px
+    margin: 68px auto 0 auto
+    padding: 20px 40px
+    box-sizing: border-box
+
+.overview_title
+    display: flex
+    justify-content: space-between
+
+    .time-container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        letter-spacing: 1px
+        position: relative
+
+        .time
+            margin: 0 20px
+        
+        .hide
+            display: none
+
+        .weekly
+            cursor: pointer
+            
+        .select_time
+            position: absolute
+            width: 125px
+            top: 35px
+            text-align: center
+            right: 0
+            background: #ffffff
+            box-shadow: 0 0 10px #dedede
+            li
+                cursor: pointer
+                padding: 5px 10px
+                &:hover
+                    color: #fff
+                    background: #000
+
+.overview_container
+    display: flex
+    justify-content: space-between
+    padding: 10px 0
+    .overview_box
+        width: 300px
+        padding: 20px 0
+        text-align: center
+        background: #ffffff
+        box-shadow: 0px 0px 10px #dedede
+        span
+            font-size: 20px
+        i
+            margin: 0 5px
+            font-size: 20px
+        p
+            font-size: 30px
+            margin: 10px 0
+            font-weight: 800
+    #revenue
+        color: $colorGreen
+    #cost
+        color: $colorRed
+    #income
+        color: $colorBlue
+
+.chart
+    margin: 10px 0
+    background: #ffffff
+    padding: 20px 40px
+    box-shadow: 0px 0px 10px #dedede
+
+.others
+    margin-top: 20px
+    display: flex
+    justify-content: space-between
+    .others_box
+        background: #ffffff
+        box-sizing: border-box
+        padding: 20px 30px
+        width: 460px
+        h2
+            margin: 10px 0
+    .social-medias
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px 0
+        border-bottom: 1px solid #eee
+        &:last-child
+            border: none
+        .fa-arrow-up
+            color: $colorGreen
+        .fa-arrow-down
+            color: $colorRed
+        .website
+            display: flex
+            align-items: center
+            span
+                color: #999
+            i
+                font-size: 38px
+                margin-right: 20px
+        .trans_number
+            display: flex
+            align-items: center
+            font-weight: 600
+            span
+                font-size: 12px
+            i
+                margin: 0 10px
+            .rise
+                color: $colorGreen
+            .down
+                color: $colorRed
+    .order
+        display: flex
+        justify-content: space-around
+        padding: 10px 0
+        border-bottom: 1px solid #eee
+        &:last-child
+            border: none
+        .orderthumb
+            width: 100px
+            height: 100px
+            flex: 2
+            img
+                width: 100px
+                height: 100px
+        .orderinfo
+            flex: 4
+            position: relative
+            padding: 10px 20px
+            i
+                margin-right: 8px
+            .date,.buyer
+                color: #999
+                font-size: 12px
+                letter-spacing: 1px
+        .orderprice
+            flex: 1
+            text-align: right
+            align-self: flex-end
+            padding: 10px
+            span
+                font-size: 14px
+            p
+                font-size: 18px
+                font-weight: 600
+
+
+        

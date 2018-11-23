@@ -1,0 +1,187 @@
+.order_container {
+    width: 1024px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 68px auto 30px auto;
+    background: #f2f2f2;
+    .top_filter {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        padding: 10px 15px;
+        margin: 5px 10px;
+        position: relative;
+        input[type="checkbox"]{
+            opacity: 0;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+            &:checked {
+                +span {
+                    background-color: #000000;
+                    color: white;
+                    &::after {
+                        content: '✔';
+                    }
+                }
+            }
+        }
+        label {
+            position: relative;
+        }
+        span {
+            cursor: pointer;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000;
+            &:after {
+                content: '';
+                font-size: 12px;
+                position: absolute;
+                left: 3px;
+                top: -2px;
+            }
+        }
+        i {
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .edit_section {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 0;
+        }
+    }
+    .table_list {
+        font-size: 14px;
+        width: 940px;
+        margin: 0 auto;
+        th {
+            font-weight: 400;
+            background: #ffffff;
+            height: 40px;
+        }
+        tr:nth-child(odd){
+            background-color: #ebebeb;
+        }
+        td {
+            padding: 0 5px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .order_list {
+            li {
+                padding: 15px;
+                box-sizing: border-box;
+                text-align-last: left;
+                border-bottom: 1px solid #ddd;
+                position: relative;
+                &:last-child {
+                    border-bottom: none
+                }
+                .li_price {
+                    font-size: 14px;
+                    color: #888;
+                }
+                .li_num {
+                    font-size: 14px;
+                    position: absolute;
+                    padding: 10px 15px;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+        .status {
+            color: #fff;
+            position: relative;
+            div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                border-radius: 3px;
+                margin-right: 15px;
+            }
+            .select_status {
+                z-index: 2;
+                display: none;
+                width: 100%;
+                color: #000;
+                background: #fff;
+                position: absolute;
+                top: 40px;
+                left: 50%;
+                transform: translateX(-50%);
+                box-shadow: 0px 0px 10px #dedede;
+                &::before {
+                    content: "";
+                    z-index: -1;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    width: 15px;
+                    height: 15px;
+                    background: #fff;
+                    transform: rotate(45deg) translateX(-50%);
+                }
+                span {
+                    margin-right: 0;
+                    border-radius: 0;
+                    display: block;
+                    width: 100%;
+                    &:hover {
+                        background: #000;
+                        color: #fff;
+                    }
+                }
+            }
+            .show_status_list {
+                display: block;
+            }
+            span {
+                cursor: pointer;
+                font-weight: 400;
+                padding: 5px;
+                display: block;
+                box-sizing: border-box;
+                border-radius: 5px;
+            }
+            .s_0 {
+                background: #888;
+            }
+            .s_1 {
+                background: #7ed321;
+            }
+            .s_2 {
+                background: #f5a263;
+            }
+            .s_3 {
+                background: #4a90e2;
+            }
+        }
+    }
+    .pages {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        span {
+            cursor: pointer;
+            margin-right: 1px;
+            padding: 10px 15px;
+            background: #fff;
+            &:hover {
+                background: #000;
+                color: #fff;
+            }
+        }
+        .nowpage {
+            background: #000;
+            color: #fff;
+        }
+    }
+}
